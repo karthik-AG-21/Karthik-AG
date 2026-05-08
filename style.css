@@ -1,0 +1,236 @@
+* {
+    margin: 0px;
+    /* border:1px solid black; */
+}
+
+.container {
+    background-color: rgb(252, 252, 252);
+    width: 100%;
+    height: auto;
+}
+
+.first-background {
+    background-image: url('assets/black-background.gif2.gif');
+    background-size: cover;
+    /* Stretches GIF to fill screen */
+    background-position: center;
+    /* Centers the GIF */
+    background-repeat: no-repeat;
+    /* Prevents tiling */
+    min-height: 100vh;
+    /* Ensures background covers full height */
+    margin: 0;
+}
+
+.section1 {
+    max-width: 1200px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    /* background-color: blue; */
+    padding-top: 3%;
+}
+
+header {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+
+}
+
+.first-box {
+
+    margin: auto;
+    display: flex;
+    /* background-color: brown; */
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
+
+
+.image {
+    margin: auto;
+    height: auto;
+    width: 50%;
+    height: 80%;
+    object-fit: cover;
+    position: relative;
+    z-index: 0;
+
+}
+
+
+.hero-textBox {
+    width: 25%;
+}
+
+.hero-text {
+    font-size: large;
+    font-weight: 500;
+}
+
+.role-text {
+    color: #ffffff;
+    font-family: 'Anton', sans-serif;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 10;
+    bottom: 0%;
+    top: 60%;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.navbar-box {
+    position: absolute;
+    margin: auto;
+    bottom: 0%;
+    top: 72%;
+    left: 0%;
+    right: 0%;
+    z-index: 20;
+    background-color: black;
+    width: 50%;
+    height: 8%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+
+
+
+.navigation-links {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+
+
+}
+
+
+.navigation-links a i {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+    /* Smooth transition for everything */
+    display: inline-block;
+}
+
+.github {
+
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: xx-large;
+    margin: auto;
+
+}
+
+.linkedin {
+    font-size: xx-large;
+    margin: auto;
+    color: #ffffff;
+}
+
+.linkedin:hover {
+    color: black;
+}
+
+.leetcode {
+    font-size: xx-large;
+    margin: auto;
+    color: white;
+
+}
+
+/* LinkedIn Hover - Turns Blue */
+.linkedin:hover {
+    color: #0077b5;
+    transform: translateY(-5px) scale(1.2);
+    /* Moves up slightly and grows */
+    filter: drop-shadow(0 0 8px #0077b5);
+    /* Glow effect */
+}
+
+/* GitHub Hover - Turns White/Silver */
+.github:hover {
+    color: #ffffff;
+    transform: translateY(-5px) scale(1.2);
+    filter: drop-shadow(0 0 8px #ffffff);
+}
+
+/* LeetCode Hover - Turns Orange */
+.leetcode:hover {
+    color: #ffa116;
+    transform: translateY(-5px) scale(1.2);
+    filter: drop-shadow(0 0 8px #ffa116);
+}
+
+
+.typing-animation {
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;
+    white-space: nowrap;
+    /* Keeps text on one line */
+    overflow: hidden;
+    /* Hides the characters as they "type" */
+    border-right: 3px solid white;
+    /* The "cursor" effect */
+    width: 0;
+
+
+    animation:
+        typing 3s steps(13, end) 0.5s forwards,
+        blink 0.8s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 13ch;
+    }
+}
+
+/* The cursor blinking logic */
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: white;
+    }
+}
+
+
+.nav-section{
+    box-sizing:border-box;
+    min-width:100%;
+    min-height:5vh;
+    background:#ffffff;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.section-items{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
