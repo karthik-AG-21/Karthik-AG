@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -15,8 +17,8 @@
             <nav class="section-items">
                 <a href="#section1">Home</a>
                 <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Project</a>
+                <a href="#skills-projects">Skills</a>
+                <a href="#">Project</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
@@ -31,7 +33,7 @@
 
                     </div>
                     <div class="image">
-                        <img src="assets/hero-image-removebg-preview.png" alt="photo of karthik fullstack developer"
+                        <img src="assets/hero-image-removebg-preview.png" alt="photo of karthik fullstack  developer"
                             width="100%">
                         <div class="role-text">
                             <h1 class="typing-animation">WEB DEVELOPER</h1>
@@ -97,60 +99,93 @@
         </section>
 
 
+
         <section id="skills-projects" class="skills-projects-section">
 
-            <div class="skills-container">
+    <!-- Education -->
 
-                <h1 class="section-title">Skills</h1>
+    <div class="education-container">
 
-                <div class="skills-grid">
-                    <div class="skill-card">HTML</div>
-                    <div class="skill-card">CSS</div>
-                    <div class="skill-card">JavaScript</div>
-                    <div class="skill-card">React</div>
-                    <div class="skill-card">Node.js</div>
-                    <div class="skill-card">MongoDB</div>
+        <h1 class="section-title">Education</h1>
+
+        <div class="education-card">
+
+            <h2>Diploma in Computer Science</h2>
+
+            <span>SDM POLYTHCNIC | 2022 - 2026</span>
+
+            <p>
+                Currently improving my skills in web development by building real-world projects 
+                and exploring modern mern technologies.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Skills -->
+
+    <div class="skills-container">
+
+        <h1 class="section-title">Skills</h1>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">React</div>
+            <div class="skill-card">Node.js</div>
+            <div class="skill-card">MongoDB</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+        <section id="skills-projects" class="skills-projects-section">
+            
+
+
+                <div class="projects-container">
+
+                    <h1 class="section-title">Projects</h1>
+
+                    <div class="projects-grid">
+
+                        <div class="project-card">
+                            <h2>Portfolio Website</h2>
+
+                            <p>
+                                A simple responsive personal portfolio website created using
+                                HTML, CSS and JavaScript.
+                            </p>
+
+                        </div>
+
+                        <div class="project-card">
+                            <h2>Weather App</h2>
+
+                            <p>
+                                A weather application that shows live weather updates using API data.
+                            </p>
+
+                        </div>
+
+                        <div class="project-card">
+                            <h2>To-Do App</h2>
+
+                            <p>
+                                A basic task management application for adding and removing daily tasks.
+                            </p>
+
+                        </div>
+
+                    </div>
+
                 </div>
-
-            </div>
-
-
-            <div class="projects-container">
-
-                <h1 class="section-title">Projects</h1>
-
-                <div class="projects-grid">
-
-                    <div class="project-card">
-                        <h2>Portfolio Website</h2>
-
-                        <p>
-                            A simple responsive personal portfolio website created using
-                            HTML, CSS and JavaScript.
-                        </p>
-
-                    </div>
-
-                    <div class="project-card">
-                        <h2>Weather App</h2>
-
-                        <p>
-                            A weather application that shows live weather updates using API data.
-                        </p>
-
-                    </div>
-
-                    <div class="project-card">
-                        <h2>To-Do App</h2>
-
-                        <p>
-                            A basic task management application for adding and removing daily tasks.
-                        </p>
-
-                    </div>
-
-                </div>
-
             </div>
 
         </section>
@@ -179,13 +214,13 @@
                         </div>
                     </div>
 
-                    <div class="contact-form">
-                        <form>
-                            <input type="text" placeholder="Your Name" required>
+                    <div class="contact-forms">
+                        <form id="contact-form">
+                            <input type="text" name="form_name" placeholder="Your Name" required>
 
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="email" name="form_email" placeholder="Your Email" required>
 
-                            <textarea rows="5" placeholder="Your Message" required></textarea>
+                            <textarea rows="5" name="form_message" placeholder="Your Message" required></textarea>
 
                             <button type="submit">Send Message</button>
                         </form>
