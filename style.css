@@ -621,3 +621,125 @@ margin:auto;
     line-height: 1.8;
     font-size: 16px;
 }
+
+/* media */
+
+@media screen and (max-width: 768px) {
+
+    #section1 {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .first-box {
+        flex-direction: column;
+        margin-top: 20%;
+        gap: 20px;
+    }
+
+    .image {
+        width: 90%;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-textBox {
+        max-width: 100%;
+        padding: 15px;
+        font-size: 0.95rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .role-text {
+        position: static;
+        font-size: 1.5rem;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .navbar-box {
+        width: 90%;
+        height: 60px;
+        top: auto;
+        bottom: 5%;
+    }
+
+    .navigation-links a i {
+        font-size: 1.4rem;
+    }
+
+    .nav-section {
+        width: 95%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px;
+    }
+
+    .section-items {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .about-container {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+    }
+
+    .about-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-title {
+        font-size: 2.5rem;
+    }
+
+    .about-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding: 25px;
+    }
+
+    .education-card {
+        padding: 20px;
+    }
+
+    .education-card h2 {
+        font-size: 22px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-title,
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .typing-animation {
+        font-size: 1rem;
+    }
+}
